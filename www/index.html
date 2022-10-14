@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<!-- 
+==References==
+Server-side:
+* http://docs.ros.org/indigo/api/roswww/html/
+* http://wiki.ros.org/web_video_server
+* http://wiki.ros.org/rosbridge_suite/Tutorials/RunningRosbridge
+
+Client-side:
+* http://wiki.ros.org/roslibjs/Tutorials/BasicRosFunctionality
+* https://getbootstrap.com/docs/4.0/getting-started/introduction/
+* https://getbootstrap.com/docs/4.0/layout/grid/
+-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/dashboard.css">
+    <!-- <link rel="stylesheet" href="css/dashboard.css"> -->
+
+    <title>path_viewer</title>
+</head>
+
+<body>
+	<div id="containerNextPath" class="direction-container">
+		<span class="arrow-mod" style="--pos: 250%;">&#10148;</span>
+		<span class="arrow-mod" style="--pos: 125%;">&#10148;</span>
+		<span class="arrow-mod" style="--pos: 0%;">&#10148;</span>
+		<span class="arrow-mod" style="--pos: -125%;">&#10148;</span>
+		<span class="arrow-mod" style="--pos: -250%;">&#10148;</span>
+	</div>
+	
+	<!-- JavaScript, import frameworks -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/roslib.min.js"></script> <!-- rosbridge -->
+
+	<!-- Custom scripts -->
+	<script type="text/javascript" src="js/racecarLogic.js"></script>
+</body>
+</html>

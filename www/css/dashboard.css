@@ -1,0 +1,50 @@
+:root {
+  --angle: 0deg;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position:relative;
+  -webkit-text-fill-color: aliceblue;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1548px;
+  perspective-origin: 50% 100%;
+}
+
+
+
+.direction-container {
+  position:absolute;
+  width: 30%;
+  height: 125%;
+  background-color: rgb(0, 174, 255);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateZ(var(--angle)) rotateX(35deg) translateY(431px) scale(2);
+  -webkit-transform: rotateZ(var(--angle)) rotateX(35deg) translateY(431px) scale(2);
+  transform-origin: 50% 200%;
+  transition:.08s ease-in-out;
+}
+
+.arrow-mod {
+  position: absolute;
+  -webkit-text-fill-color: black;
+  transform: rotate(-90deg) scaleY(2);
+  -webkit-transform: rotate(-90deg) scaleY(2);
+  font-size: 100px;
+  margin-right: 16.5px;
+  margin-bottom: var(--pos);
+}
