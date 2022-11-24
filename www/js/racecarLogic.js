@@ -10,7 +10,7 @@ var frontValueThreshold = 0.70;
 //Some initializations after the page has been shown
 $(document).ready(function(){
     root = document.querySelector(':root');
-    connectROS('192.168.1.26');
+    connectROS('localhost');
 });
 // Define some functions
 function connectROS(ipAddr) {
