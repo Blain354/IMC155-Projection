@@ -27,17 +27,9 @@ Client-side:
 
 <body>
 	<div>
-
-	</div>
-	<div id="containerNextPath" class="direction-container">
-		<span class="arrow-mod" style="--pos: 250%;">&#10148;</span>
-		<span class="arrow-mod" style="--pos: 125%;">&#10148;</span>
-		<span class="arrow-mod" style="--pos: 0%;">&#10148;</span>
-		<audio controls autoplay>
+		<audio controls autoplay loop>
 			<source src="msn-nudge" type="audio/mp3">
 			</audio>
-		<span class="arrow-mod" style="--pos: -125%;">&#10148;</span>
-		<span class="arrow-mod" style="--pos: -250%;">&#10148;</span>
 	</div>
 	
 	<!-- JavaScript, import frameworks -->
@@ -48,5 +40,10 @@ Client-side:
 
 	<!-- Custom scripts -->
 	<script type="text/javascript" src="js/racecarLogic.js"></script>
+    <script>
+        setTimeout(function(){
+            window.close()
+        }, 5500);
+    </script>
 </body>
 </html>
