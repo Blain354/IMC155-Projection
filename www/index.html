@@ -33,11 +33,13 @@ Client-side:
 		<span class="arrow-mod" style="--pos: 250%;">&#10148;</span>
 		<span class="arrow-mod" style="--pos: 125%;">&#10148;</span>
 		<span class="arrow-mod" style="--pos: 0%;">&#10148;</span>
-		<audio controls autoplay>
-			<source src="msn-nudge" type="audio/mp3">
-			</audio>
 		<span class="arrow-mod" style="--pos: -125%;">&#10148;</span>
 		<span class="arrow-mod" style="--pos: -250%;">&#10148;</span>
+		
+		<!-- <iframe src="sound_effect/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe> -->
+		<audio id="sound" autoplay loop style="display: none">
+			<source src="sound_effect/nudge2.mp3" type="audio/mp3">
+		</audio>
 	</div>
 	
 	<!-- JavaScript, import frameworks -->

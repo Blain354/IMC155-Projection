@@ -1,5 +1,8 @@
 :root {
   --angle: 0deg;
+  --back_color_blue: rgb(66, 154, 255);
+  --back_color_red: rgb(255, 0, 0);
+  --back_color: var(--back_color_blue);
 }
 
 html {
@@ -25,7 +28,7 @@ body {
   position:absolute;
   width: 30%;
   height: 125%;
-  background-color: rgb(0, 174, 255);
+  background-color: var(--back_color);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 15%;
